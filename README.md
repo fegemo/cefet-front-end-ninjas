@@ -94,6 +94,7 @@ Seguem algumas sugestões para melhorar o visual das páginas:
 1. Crie uma regra para mostrar se alguma imagem da página está **sem o atributo `alt`**
    - Naquelas que se enquadrarem, coloque uma borda vermelha
    - Escreva um seletor que faça a detecção automaticamente (e.g., sem usar classes ou inspecionar o código)
+1. Escreva um atributo alt bem descritivo para a imagem encontrada
 
 ### <abbr title="Frequently Asked Questions">FAQ</abbr>
 
