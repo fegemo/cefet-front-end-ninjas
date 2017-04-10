@@ -143,3 +143,18 @@ Seguem algumas sugestões para melhorar o visual das páginas:
        }
        ```
   - No **Windows**:
+    1. Aperte a tecla <kbd>Windows</kbd> (a tecla se chama <kbd>Super</kbd>,
+       na verdade)
+    1. Digite "_font_" (sem áspas) para buscar pelo visualizador e abra o
+       visualizador
+
+       ![](https://fegemo.github.io/cefet-front-end/images/ninjas-windows-font-visualizer-1.png)
+    1. Explore as fontes disponíveis
+
+       ![](https://fegemo.github.io/cefet-front-end/images/ninjas-windows-font-visualizer-2.png)
+    1. Assim que escolher, pegue seu nome e crie use a propriedade CSS:
+       ```css
+       p {
+         font-family: "Calibri", serif;
+       }
+       ```
