@@ -1,4 +1,4 @@
-# cefet-web-ninjas
+# cefet-front-end-ninjas
 
 Duas páginas web explicando como se tornar um Ninja na vida real, com algumas
 curiosidades sobre essa gente ligeira.
@@ -15,6 +15,13 @@ página web (_i.e._, libere o artista dentro de você ;).
 
 Assim, esta atividade propõe alguns **itens obrigatórios** e outros de
 **sugestão** para guiar seu espírito artístico.
+
+### Iniciando o exercício
+
+1. [Baixe os arquivos iniciais](https://github.com/fegemo/cefet-front-end-ninjas/archive/master.zip): as imagens e as duas páginas HTML
+1. Descompacte na área de trabalho
+1. Renomeie a pasta para `ninjas`
+1. Comece o exercício! :dash:
 
 ### Itens Obrigatórios
 
@@ -81,6 +88,12 @@ Seguem algumas sugestões para melhorar o visual das páginas:
   **fonte com serifa** para os títulos
   - Não é bom usar mais que 3 fontes em uma mesma página. O ideal são 2 apenas.
 - Justifique (alinhamento) o texto dos parágrafos com `text-align: justify`
+
+### Desafio
+
+1. Crie uma regra para mostrar se alguma imagem da página está **sem o atributo `alt`**
+   - Naquelas que se enquadrarem, coloque uma borda vermelha
+   - Escreva um seletor que faça a detecção automaticamente (e.g., sem usar classes ou inspecionar o código)
 
 ### <abbr title="Frequently Asked Questions">FAQ</abbr>
 
