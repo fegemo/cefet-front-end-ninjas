@@ -111,11 +111,32 @@ Seguem algumas sugestões para melhorar o visual das páginas:
     "automático", o que faz o navegador dividir o espaço lateral igualmente em 2
   - Explicação do `display: block`: uma `<img>` é `inline` por padrão e
     elementos `inline` não são afetados por `margin` ou `padding`
-- Estados de um hyperlink:
-  - `a:link` - um link que nunca foi visitado
-  - `a:visited` - um link que o usuário já visitou
-  - `a:hover` - um link quando o mouse está em cima dele
-  - `a:active` - um link no momento em que é "clicado"
+- Hiperlinks podem ser estilizados de maneira diferente em diferentes situações (quem chamamos de "estados").
+  Para tal, existem os seletores de estado, que são os seguintes:
+  - `a:link` - um link que nunca foi visitado. Exemplo:
+    ```css
+    a:link {
+      color: black;
+    }
+    ```
+  - `a:visited` - um link que o usuário já visitou. Exemplo:
+    ```css
+    a:link {
+      color: orange;
+    }
+    ```
+  - `a:hover` - um link quando o mouse está em cima dele. Exemplo:
+    ```css
+    a:link {
+      color: silver;
+    }
+    ```
+  - `a:active` - um link no exato momento em que é "clicado". Exemplo:
+    ```css
+    a:active {
+      color: yellow;
+    }
+    ```
 - Imagem de fundo que não repete
 
   ```css
