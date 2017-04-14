@@ -121,13 +121,13 @@ Seguem algumas sugestões para melhorar o visual das páginas:
     ```
   - `a:visited` - um link que o usuário já visitou. Exemplo:
     ```css
-    a:link {
+    a:visited {
       color: orange;
     }
     ```
   - `a:hover` - um link quando o mouse está em cima dele. Exemplo:
     ```css
-    a:link {
+    a:hover {
       color: silver;
     }
     ```
