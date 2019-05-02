@@ -195,6 +195,14 @@ Seguem algumas sugestões para melhorar o visual das páginas:
          font-family: "Abyssinica SIL", serif;
        }
        ```
+       - Fontes cujo nome possuem mais de uma palavra (por exemplo, Abyssinica SIL) devem ser especificadas com seu nome dentro de aspas. Portanto:
+         ```css
+         p {
+           font-family: "Abyssinica SIL", serif; /* correto */
+           font-family: Abyssinica SIL, serif;   /* incorreto */
+         }
+         ```
+       - As palavras "Italic", "Bold", "Bold Italic", "Roman" que aparecem ao final do nome de algumas fontes não fazem parte do nome da fonte. Por exemplo, o nome da fonte "Bitstream Charter, Bold" é apenas "Bitstream Charter"
   - No **Windows**:
     1. Aperte a tecla <kbd>Windows</kbd> (a tecla se chama <kbd>Super</kbd>,
        na verdade)
@@ -211,5 +219,12 @@ Seguem algumas sugestões para melhorar o visual das páginas:
          font-family: "Calibri", serif;
        }
        ```
+       - Fontes cujo nome possuem mais de uma palavra (por exemplo, Abyssinica SIL) devem ser especificadas com seu nome dentro de aspas obrigatoriamente. Portanto:
+         ```css
+         p {
+           font-family: "Courier New", serif; /* correto */
+           font-family: Courier New, serif;   /* incorreto */
+         }
+         ```
 
 [seletor-estado]: https://fegemo.github.io/cefet-front-end/classes/css2/#desafio-seletor-estado
