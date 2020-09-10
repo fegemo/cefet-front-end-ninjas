@@ -14,7 +14,7 @@ atributo (eg, `[alt]`), pseudoclasse (eg, `:hover`) etc.
 
 Você deve estilizar as duas páginas (arquivos `index.html` e
 `curiosidades.html`) de forma a torná-las extremamente atraentes ao leitor
-de páginas web exigente.
+de páginas web exigente. Você deve usar um arquivo CSS (que você deve criar e incluir nelas).
 
 Você **tem liberdade para escolher as cores e os estilos** que melhor agradarem
 aos olhos, respeitando o **bom senso** de como se espera a aparência de uma
@@ -42,13 +42,13 @@ Aqui estão os itens que precisam ser implementados:
 1. **Logomarca**
    - Reduzir o tamanho da logomarca (ela está muito grande) para `200px`
      de largura (`width`)
-     - Repare que a altura será ajustada automaticamente... mas se você
+     - Repare que <u>a altura será ajustada automaticamente</u>... mas se você
        defini-la também, dependendo do valor que colocar, pode acontecer isto:
 
        ![Imagem de um desenho de um rosto de ninja, achatada](https://fegemo.github.io/cefet-front-end/images/ninjas-flattened-image.png)
        - Imagens achatadas/alongadas são um ultraje aos olhos do bom usuário
          da web
-       - Portanto, basta definir apenas largura, ou altura
+       - Portanto, basta definir **apenas** largura, ou apenas altura
    - Centralizá-la (veja [FAQ](#user-content-faq))
 1. **Imagens e vídeos** do Youtube (elemento
    &lt;iframe ...&gt;&lt;/iframe&gt;) no corpo da página
@@ -83,12 +83,15 @@ Aqui estão os itens que precisam ser implementados:
          [**seletores de atributos**][seletores-atributos], que se encaixam
          direitinho neste caso
 1. **"Notas"** (aparecem no "passo 2 para se tornar um ninja" e nas referências)
+   - É um parágrafo a ser estilizado de forma diferente (tem `class="nota"`)
    - Esmaeça (deixe mais "apagadinho") o texto das notas para que não
      chamem tanta atenção quanto o texto principal
      - Isso pode ser feito colocando uma cor do texto (`color`) mais clara ou
        usando a propriedade `opacity` (⬅️ indicação do professor)
        - `opacity` recebe um número entre 0 e 1 (por exemplo, `opacity: 0.5;`)
          e define a opacidade do elemento: 1 ➡️ 100% opaco, 0 ➡️ transparente.
+   - Coloque uma cor de fundo nesses parágrafos
+   - Há um `&lg;strong&gt;` escrito "Nota" nele. Estilize "elementos `strong` dentro de parágrafos com classe `nota`" deixando-os com uma `color` diferente do restante do parágrafo
 1. **Número do passo** (para se tornar ninja)
    - Aumente a fonte e mude a cor e o fundo do número do passo
    - Aumente a fonte (_e.g._, `font-size: 24px`) do "nome do passo"
@@ -114,7 +117,7 @@ Seguem algumas sugestões para melhorar o visual das páginas:
   - Não é bom usar mais que 3 fontes em uma mesma página. O ideal são 2 apenas.
 - Justifique (alinhamento) o texto dos parágrafos com `text-align: justify`
 
-### Desafio
+### Desafio 1
 
 1. Crie uma regra para mostrar se alguma imagem da página está
    **sem o atributo `alt`**
@@ -126,15 +129,22 @@ Seguem algumas sugestões para melhorar o visual das páginas:
 
 [seletor-negacao]: https://fegemo.github.io/cefet-front-end/classes/css2/#desafio-seletor-negacao
 
+
+
+### Desafio 2
+
+1. Crie regras CSS para que os parágrafos ímpares (1º, 3º, 5º...) estejam alinhados à esquerda e os pares alinhados à direita.
+
+
 ### <abbr title="Frequently Asked Questions">FAQ</abbr>
 
 - Centralizando uma `<img>`:
 
   ```css
   img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
   }
   ```
   - Explicação do `margin`: atribuímos uma `margin` lateral com valor
@@ -148,34 +158,34 @@ Seguem algumas sugestões para melhorar o visual das páginas:
   - `a:link` - um link que nunca foi visitado. Exemplo:
     ```css
     a:link {
-      color: black;
+        color: black;
     }
     ```
   - `a:visited` - um link que o usuário já visitou. Exemplo:
     ```css
     a:visited {
-      color: orange;
+        color: orange;
     }
     ```
   - `a:hover` - um link quando o mouse está em cima dele. Exemplo:
     ```css
     a:hover {
-      color: silver;
+        color: silver;
     }
     ```
   - `a:active` - um link no exato momento em que é "clicado". Exemplo:
     ```css
     a:active {
-      color: yellow;
+        color: yellow;
     }
     ```
 - Imagem de fundo que não repete:
 
   ```css
   body {
-    background-image: url(img/nome-da-imagem.png);
-    background-repeat: no-repeat;
-    /*background-position: top left; */ /* este já é o valor padrão */
+      background-image: url(img/nome-da-imagem.png);
+      background-repeat: no-repeat;
+      /*background-position: top left; */ /* este já é o valor padrão */
   }
   ```
 - Que fontes estão disponíveis no meu computador?
@@ -192,14 +202,14 @@ Seguem algumas sugestões para melhorar o visual das páginas:
     1. Assim que escolher, pegue seu nome e crie use a propriedade CSS:
        ```css
        p {
-         font-family: "Abyssinica SIL", serif;
+           font-family: "Abyssinica SIL", serif;
        }
        ```
        - Fontes cujo nome possuem mais de uma palavra (por exemplo, Abyssinica SIL) devem ser especificadas com seu nome dentro de aspas. Portanto:
          ```css
          p {
-           font-family: "Abyssinica SIL", serif; /* correto */
-           font-family: Abyssinica SIL, serif;   /* incorreto */
+             font-family: "Abyssinica SIL", serif; /* correto */
+             font-family: Abyssinica SIL, serif;   /* incorreto */
          }
          ```
        - As palavras "Italic", "Bold", "Bold Italic", "Roman" que aparecem ao final do nome de algumas fontes não fazem parte do nome da fonte. Por exemplo, o nome da fonte "Bitstream Charter, Bold" é apenas "Bitstream Charter"
@@ -216,14 +226,14 @@ Seguem algumas sugestões para melhorar o visual das páginas:
     1. Assim que escolher, pegue seu nome e crie use a propriedade CSS:
        ```css
        p {
-         font-family: "Calibri", serif;
+           font-family: "Calibri", serif;
        }
        ```
        - Fontes cujo nome possuem mais de uma palavra (por exemplo, Abyssinica SIL) devem ser especificadas com seu nome dentro de aspas obrigatoriamente. Portanto:
          ```css
          p {
-           font-family: "Courier New", serif; /* correto */
-           font-family: Courier New, serif;   /* incorreto */
+             font-family: "Courier New", serif; /* correto */
+             font-family: Courier New, serif;   /* incorreto */
          }
          ```
 
