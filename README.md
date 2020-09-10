@@ -91,7 +91,7 @@ Aqui estão os itens que precisam ser implementados:
        - `opacity` recebe um número entre 0 e 1 (por exemplo, `opacity: 0.5;`)
          e define a opacidade do elemento: 1 ➡️ 100% opaco, 0 ➡️ transparente.
    - Coloque uma cor de fundo nesses parágrafos
-   - Há um `&lg;strong&gt;` escrito "Nota" nele. Estilize "elementos `strong` dentro de parágrafos com classe `nota`" deixando-os com uma `color` diferente do restante do parágrafo
+   - Há um `<strong>` escrito "Nota" nele. Estilize "elementos `strong` dentro de parágrafos com classe `nota`" deixando-os com uma `color` diferente do restante do parágrafo
 1. **Número do passo** (para se tornar ninja)
    - Aumente a fonte e mude a cor e o fundo do número do passo
    - Aumente a fonte (_e.g._, `font-size: 24px`) do "nome do passo"
