@@ -23,7 +23,7 @@ página web (_i.e._, libere o artista dentro de você ;).
 Assim, esta atividade propõe alguns **itens obrigatórios** e outros de
 **sugestão** para guiar seu espírito artístico.
 
-Esta atividade **deve ser feita sem alterar os arquivos HTML!!** Ou seja, você
+Esta atividade **deve ser feita <u>sem alterar os arquivos HTML</u>!!** Ou seja, você
 não deve colocar novos `id`/`class` nos atributos das _tags_ HTML. Para isso,
 você vai precisar usar seletores CSS diferentes para alguns dos itens da
 atividade.
@@ -126,6 +126,7 @@ Seguem algumas sugestões para melhorar o visual das páginas:
      classes ou inspecionar o código)
      - Você vai querer usar o [seletor de negação para isso][seletor-negacao]
 1. Escreva um atributo `alt` bem descritivo para a imagem encontrada
+   - Obs: para isso você **precisa alterar o arquivo HTML**
 
 [seletor-negacao]: https://fegemo.github.io/cefet-front-end/classes/css2/#desafio-seletor-negacao
 
