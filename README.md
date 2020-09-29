@@ -74,7 +74,7 @@ Aqui estão os itens que precisam ser implementados:
        colocar uma tag `<img>`
      - _Dica 1_: você pode usar esta imagem
        (![Ícone de um globo do planeta Terra](img/globo.png)) e você
-       precisará das propriedades `background-image`, `background-repeat`
+       pode usar a propriedade [list-style-image](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image) ou use das propriedades `background-image`, `background-repeat`
        (veja [FAQ](#faq)) e `padding-left`
      - _Dica 2_: o que define um hiperlink para uma URL externa? É um elemento
        `<a ...>...</a>` que aponta (atributo `href`) para um endereço
