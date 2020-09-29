@@ -73,8 +73,8 @@ Aqui estão os itens que precisam ser implementados:
        seja, você deve usar CSS para definir uma imagem de fundo, e não pode
        colocar uma tag `<img>`
      - _Dica 1_: você pode usar esta imagem
-       (![Ícone de um globo do planeta Terra](img/globo.png)) e você
-       pode usar a propriedade [list-style-image](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image) ou use das propriedades `background-image`, `background-repeat`
+       (![Ícone de um globo do planeta Terra](img/globo.png)) como imagem de fundo e você
+       deverá usar as propriedades `background-image`, `background-repeat`
        (veja [FAQ](#faq)) e `padding-left`
      - _Dica 2_: o que define um hiperlink para uma URL externa? É um elemento
        `<a ...>...</a>` que aponta (atributo `href`) para um endereço
