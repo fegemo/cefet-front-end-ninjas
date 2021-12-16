@@ -30,7 +30,7 @@ atividade.
 
 ### Iniciando o exercício
 
-1. [Baixe os arquivos iniciais](https://github.com/fegemo/cefet-front-end-ninjas/archive/master.zip): as imagens e as duas páginas HTML
+1. [Baixe os arquivos iniciais](https://github.com/fegemo/cefet-front-end-ninjas/archive/main.zip): as imagens e as duas páginas HTML
 1. Descompacte na área de trabalho
 1. Renomeie a pasta para `ninjas`
 1. Comece o exercício! :dash:
@@ -122,7 +122,7 @@ Seguem algumas sugestões para melhorar o visual das páginas:
 1. Crie uma regra para mostrar se alguma imagem da página está
    **sem o atributo `alt`**
    - Naquelas que se enquadrarem, coloque uma borda vermelha
-   - Escreva um seletor que faça a detecção automaticamente (e.g., sem usar
+   - Escreva um seletor que faça a detecção automaticamente (e.g., sem usar
      classes ou inspecionar o código)
      - Você vai querer usar o [seletor de negação para isso][seletor-negacao]
 1. Escreva um atributo `alt` bem descritivo para a imagem encontrada
